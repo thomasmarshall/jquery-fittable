@@ -1,7 +1,7 @@
 jquery-fittable
 ===============
 
-A jQuery plugin to fit or fill an element inside it's container.
+A jQuery plugin to fit or fill an element inside its container.
 
 ```html
 <div class="some-container">
