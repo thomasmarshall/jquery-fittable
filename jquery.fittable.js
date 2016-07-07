@@ -10,8 +10,8 @@ var Fittable = {
     this.originalWidth = options.width || this.el.attr('width');
     this.originalHeight = options.height || this.el.attr('height');
 
-    $(window).resize($.proxy(this, 'resize'));
-    $(window).resize();
+    $(window).on('resize.fittable', $.proxy(this, 'resize'));
+    $(window).trigger('resize.fittable');
   },
 
   resize: function() {
